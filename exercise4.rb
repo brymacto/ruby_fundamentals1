@@ -1,11 +1,6 @@
 (1..100).each do |num|
-	if (num % 3 == 0) && (num % 5 == 0)
-		puts "BitMaker"
-	elsif num % 3 == 0
-		puts "Bit"
-	elsif num % 5 == 0
-		puts "Maker"
-	else
-		puts num
-	end
+	print "Bit" if num % 3 == 0
+	print "Maker" if num % 5 == 0
+	print num if (num % 3 != 0) && (num % 5 != 0)
+	print "\n"
 end
